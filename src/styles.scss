@@ -1,0 +1,12 @@
+@import "./app/colors";
+
+.light{
+    @each $var, $color in $colors{
+        #{$var}: nth($color, 1);
+    }
+}
+.dark{
+    @each $var, $color in $colors{
+        #{$var}: nth($color, 2);
+    }
+}
